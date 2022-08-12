@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-layout',
   templateUrl: './layout.component.html',
-  styleUrls: ['./layout.component.scss']
+  styleUrls: ['./layout.component.scss'],
 })
-export class LayoutComponent implements OnInit {
+export class LayoutComponent {
+  constructor(private router: Router) {}
 
-  constructor() { }
-
-  ngOnInit(): void {
+  public navigateVisualBoard(): void {
+    console.log('click');
+    this.router.navigate(['/visualborad']);
   }
-
 }

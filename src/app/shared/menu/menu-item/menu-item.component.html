@@ -1,5 +1,7 @@
-<div class="btn-menu">
-  <ng-content></ng-content>
+<div class="btn-menu" [class]="containerCssClass()">
+  <ng-content> </ng-content>
 </div>
 
-<ng-template></ng-template>
+<ng-container #viewContainerRef>
+
+</ng-container>
