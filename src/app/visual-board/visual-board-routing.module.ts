@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { VisualBoardComponent } from './visual-board.component';
+import { VisualBoardComponent } from './components/visual-board/visual-board.component';
 
 const routes: Routes = [{ path: '', component: VisualBoardComponent }];
 

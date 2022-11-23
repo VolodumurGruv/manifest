@@ -21,6 +21,11 @@ const routes: Routes = [
             (m) => m.ManifestationModule
           ),
       },
+      {
+        path: 'steps',
+        loadChildren: () => import('./steps/steps.module').then(m => m.StepsModule)
+      }
+
     ],
   },
 

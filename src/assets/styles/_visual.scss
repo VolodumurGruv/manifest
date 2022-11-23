@@ -1,0 +1,62 @@
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container {
+  margin: 2rem;
+  width: 100%;
+}
+
+.item {
+  margin: 5px;
+  width: 250px;
+  height: auto;
+  background-color: rgba(6, 128, 243, 0.6);
+}
+
+h1 {
+  text-shadow: 2px 2px 2px rgba(0, 217, 255, 0.6);
+}
+
+.btn {
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 3px 3px 3px rgb(0, 217, 255);
+  background-color: rgb(0, 162, 255);
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(0, 217, 255);
+    box-shadow: 3px 3px 3px rgb(0, 162, 255);
+  }
+}
+
+.manifestation {
+  margin: 1rem 2rem;
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mat-form-field-appearance-legacy .mat-form-field-infix {
+    width: 35rem;
+  }
+}
+
+app-visual-board-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.manifestation h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}

@@ -5,7 +5,4 @@ import { Component, HostBinding } from '@angular/core';
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss'],
 })
-export class MenuComponent {
-  @HostBinding('style.display') public display = 'inline-block';
-  @HostBinding('style.position') public position = 'absolute';
-}
+export class MenuComponent {}

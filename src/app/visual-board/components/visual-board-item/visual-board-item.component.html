@@ -1,0 +1,8 @@
+<ng-container *ngIf="items.length">
+  <mat-card cdkDrag class="item" *ngFor="let item of items">
+    <mat-card-header>
+      <mat-card-title>{{ item?.title }}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="{{ item?.image }}" alt="abundunce" />
+  </mat-card>
+</ng-container>

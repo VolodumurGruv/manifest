@@ -1,27 +1,5 @@
 <header>
-  <nav class="menu-nav">
-    <app-menu-item [menuFor]="main">Menu</app-menu-item>
-    <ng-template #main>
-      <app-menu>
-        <app-menu-item [menuFor]="manifestation">Manifestation</app-menu-item>
-        <app-menu-item [menuFor]="affiramtion">Affirmation</app-menu-item>
-        <app-menu-item [menuFor]="visualBoard">Visual board</app-menu-item>
-      </app-menu>
-
-      <ng-template #manifestation calss="menu-nav--item">
-        <app-menu-item>
-          <a routerLink="/manifestation">Table</a>
-        </app-menu-item>
-      </ng-template>
-      <ng-template #affiramtion calss="menu-nav--item"></ng-template>
-      <ng-template #visualBoard calss="menu-nav--item">
-        <app-menu-item class="menu-nav--item">
-          <a routerLink="/visualboard">Show</a>
-        </app-menu-item>
-        <app-menu-item class="menu-nav--item">
-          <a routerLink="/visualboard">Edit</a>
-        </app-menu-item>
-      </ng-template>
-    </ng-template>
+  <nav>
+    <app-menu></app-menu>
   </nav>
 </header>

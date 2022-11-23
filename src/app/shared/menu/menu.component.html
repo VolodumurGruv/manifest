@@ -1,3 +1,31 @@
-<div class="menu">
-  <ng-content></ng-content>
-</div>
+<button class="menu-btn" mat-button [matMenuTriggerFor]="menu">Menu</button>
+
+<mat-menu #menu="matMenu">
+  <button class="menu-btn" mat-menu-item [matMenuTriggerFor]="manifestation">
+    Manifestation
+  </button>
+  <button class="menu-btn" mat-menu-item [matMenuTriggerFor]="visualBoard">
+    Visual Board
+  </button>
+</mat-menu>
+
+<mat-menu #manifestation="matMenu">
+  <button mat-menu-item>
+    <a class="menu-btn" routerLink="manifestation">Manifestation</a>
+  </button>
+  <button mat-menu-item>
+    <a
+      class="menu-btn"
+      [routerLink]="['/steps']"
+      routerLinkActive="router-link-active"
+    >
+      Six Steps
+    </a>
+  </button>
+</mat-menu>
+
+<mat-menu #visualBoard="matMenu">
+  <button mat-menu-item>
+    <a class="menu-btn" routerLink="/visualboard">Visual Borad</a>
+  </button>
+</mat-menu>
